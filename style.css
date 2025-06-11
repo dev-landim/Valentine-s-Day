@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ancizar Serif', serif;
+    background-color: #ddd8c3;  
+}
+
+.container {
+    background-color: rgb(13, 88, 47);
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+
+}
+
+.container h1 {
+    font-family: 'Ancizar Serif', serif;
+    font-size: 20px;
+    font-weight: 200;
+}
+
+.links a {
+    text-align: end;
+    color: #67ae71;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay-text .data {
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 1px 1px 4px rgba(0, 0,0,0.7);
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.main-content img {
+    height: 75%;
+    width: auto;
+    max-width: 33%;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    opacity: 0.9;
+}
+
+.main-content .img-center {
+    transform: scale(1.05);
+    opacity: 1;
+    z-index: 1;
+}
+
+.mensagem {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+}
+
+.titulo2 {
+    font-size: 24px;
+    color: rgb(13, 88, 47);
+    margin-bottom: 10px;
+}
+
+.texto {
+    font-size: 18px;
+    color: #333;
+}
