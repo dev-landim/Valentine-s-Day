@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cookie&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cookie&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ancizar+Serif:ital,wght@0,300..900;1,300..900&family=Antic+Didone&family=Baskervville:ital,wght@0,600;1,600&family=Cinzel:wght@400..900&family=Fraunces:ital,opsz,wght,SOFT@0,9..144,100..900,50;1,9..144,100..900,50&family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Sacramento&family=Yeseva+One&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -6,107 +10,256 @@
 }
 
 body {
-    font-family: 'Ancizar Serif', serif;
-    background-color: #ddd8c3;  
+
+    background-color: #efebce;
+    /*color palet:
+    olive petal #a3a380
+    golden clover #d7ce93
+    artic daisy #efebce
+    rose blush #d8a48f
+    peach blossom #bb8588
+    */
 }
 
-.container {
-    background-color: rgb(13, 88, 47);
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 9;
-
-}
-
-.container h1 {
-    font-family: 'Ancizar Serif', serif;
-    font-size: 20px;
-    font-weight: 200;
-}
-
-.links a {
-    text-align: end;
-    color: #67ae71;
-    font-size: 14px;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.hero {
-    position: relative;
+.index {
     height: 100vh;
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #f0f0f0;
+    align-items: center;
+    background-color: #efebce;
+}
+
+header {
+    background-color: #efebce;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.center {
+    display: block;
+    justify-content: center;
+    font-family: 'Bodoni Moda', serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: #000000;
+    flex: 1;
+    text-align: right;
+    padding-right: 282px;
+}
+
+.right {
+    justify-content: flex-start;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.right a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Poppins', serif;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.right a:hover {
+    color: #d7ce93;
+}
+
+.left {
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+
+.btn-gift {
+    display: flex;
+    align-items: start;
+    background-color: #efebce;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 0.2px solid #000;
+    transition: 0.3s;
+
+}
+
+.btn-gift a {
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Poppins', serif;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn-gift:hover {
+    background-color: #d7ce93;
+    color: #000;
+}
+
+.hero {
+    width: 100%;
+    height: calc(100vh + 80px);
+    display: flex;
     overflow: hidden;
+    text-align: center;
+    flex-direction: column;
 }
 
 .overlay-text {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 90px;
     width: 100%;
-    transform: translate(-50%, -50%);
-    text-align: center;
     z-index: 2;
 }
 
-.overlay-text .data {
-    font-size: 100px;
-    color: rgb(255, 255, 255);
-    font-weight: 300;
+.data {
+    letter-spacing: 3px;
+    font-family: 'Bodoni Moda', sans-serif;
+    font-size: 80px;
+    color: #000;
+    font-weight: 100;
     text-align: center;
-    text-shadow: 1px 1px 4px rgba(0, 0,0,0.7);
+
 }
 
 .main-content {
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;
-    width: 100%;
-    height: 100%;
-    padding: 0 20px;
+    gap: 100px;
     box-sizing: border-box;
-    z-index: 1;
 }
 
 .main-content img {
-    height: 75%;
-    width: auto;
-    max-width: 33%;
+    padding-top: 60px;
+    align-items: center;
+    justify-content: center;
+    height: 70%;
+    width: 80%;
+    max-width: 30%;
     object-fit: contain;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    opacity: 0.9;
 }
 
 .main-content .img-center {
-    transform: scale(1.05);
+    transform: scale(1.4);
     opacity: 1;
     z-index: 1;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 .mensagem {
+    padding-top: 20px;
+    display: flex;
     text-align: center;
-    padding: 40px 20px;
-    background-color: #f0f0f0;
-}
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    justify-content: center;
 
-.titulo2 {
-    font-size: 24px;
-    color: rgb(13, 88, 47);
-    margin-bottom: 10px;
 }
 
 .texto {
-    font-size: 18px;
-    color: #333;
+    letter-spacing: 1px;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+}
+
+.nossa-historia {
+    padding: 90px 75px 90px 75px;
+    background-color: #a3a380;
+    height: 100vh;
+}
+
+.nossa-historia h1 {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 40px;
+    color: #000000;
+    font-weight: 100;
+    text-align: center;
+}
+
+.paper {
+    width: 1-0%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-top: 10px;
+    background-color: #efebce;
+    margin-top: 20px;
+}
+
+.paper p {
+    font-family: 'Poppins', serif;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.registros {
+    padding: 20px;
+    overflow: hidden;
+}
+
+.registros img {
+    max-width: 200%;
+    height: auto;
+    vertical-align: middle;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.grid-wrapper>div {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.grid-wrapper>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    display: block;
+    object-position: center center;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-auto-rows: 200px;
+    grid-auto-flow: dense;
+}
+
+.grid-wrapper .wide {
+    grid-column: span 2;
+}
+
+.grid-wrapper .tall {
+    grid-row: span 2;
+}
+
+.grid-wrapper .big {
+    grid-column: span 2;
+    grid-row: span 2;
 }
